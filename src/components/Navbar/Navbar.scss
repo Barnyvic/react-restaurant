@@ -1,5 +1,46 @@
+@import "../../variables";
 .app__navbar {
   width: 100%;
   display: flex;
-  border: 3px solid black;
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+  color: $color-white;
+  background: $color-black;
+  padding: 1rem;
+  font-size: 1.5rem;
+  .app__navbar_logo {
+    background-color: $color-black;
+    img {
+      width: 50%;
+      margin-left: 1rem;
+    }
+  }
+  .app__navbar_links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    justify-content: space-evenly;
+    li {
+      color: $color-white;
+      a:hover {
+        color: $color-grey;
+        transition: ease-in-out;
+      }
+    }
+  }
+  .login-register {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 3rem;
+    span {
+      margin: 0 1rem;
+    }
+    p:hover {
+      border-bottom: 2px solid $color-gold;
+      transition: ease-in-out;
+    }
+  }
 }

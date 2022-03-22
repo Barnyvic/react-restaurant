@@ -27,6 +27,11 @@ function Navbar() {
           <a href="#Contact">Contact</a>
         </li>
       </ul>
+      <div className="login-register">
+        <p>Log in / Register </p>
+        <span>|</span>
+        <p> Book Table</p>
+      </div>
     </nav>
   );
 }
