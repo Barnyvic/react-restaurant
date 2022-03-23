@@ -2,8 +2,15 @@ import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
 import Logo from "../../assets/gericht.png";
+import { useState } from "react";
 
 function Navbar() {
+  const [toggleMenu, setToggleMenu] = useState(false);
+
+  const handleToggle = () => {
+    setToggleMenu(!toggleMenu);
+  };
+
   return (
     <nav className="app__navbar">
       <div className="app__navbar_logo">
@@ -31,7 +38,37 @@ function Navbar() {
         <span>|</span>
         <p> Book Table</p>
       </div>
-      <GiHamburgerMenu className="Bars" />
+      <div className="app__navbar-smallscreen">
+        {toggleMenu ? (
+          <MdOutlineRestaurantMenu
+            className="Bars Bar"
+            onClick={handleToggle}
+          />
+        ) : (
+          <GiHamburgerMenu className="Bars " onClick={handleToggle} />
+        )}
+        {toggleMenu && (
+          <div className="app__navbar-smallscreen_overlay ">
+            <ul className="app__navbar-smallscreen_links">
+              <li>
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#menu">Menu</a>
+              </li>
+              <li>
+                <a href="#awards">Awards</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        )}
+      </div>
     </nav>
   );
 }

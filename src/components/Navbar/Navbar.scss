@@ -4,6 +4,7 @@
   max-width: 100%;
   display: flex;
   cursor: pointer;
+  position: relative;
   justify-content: space-between;
   align-items: center;
   color: $color-white;
@@ -23,7 +24,7 @@
     align-items: center;
     gap: 3rem;
     justify-content: space-evenly;
-    @media (max-width: 1350px) {
+    @media (max-width: 1500px) {
       display: none;
     }
     li {
@@ -40,23 +41,65 @@
     align-items: center;
     justify-content: space-evenly;
     margin-right: 3rem;
-    @media (max-width: 1350px) {
+    @media (max-width: 1000px) {
       display: none;
     }
     span {
       margin: 0 1rem;
     }
     p:hover {
-      border-bottom: 2px solid $color-gold;
+      border-bottom: 3px solid $color-gold;
       transition: ease-in-out;
     }
   }
   .Bars {
     display: none;
-    color: white;
+    color: $color-white;
     font-size: 2.5rem;
-    @media (max-width: 1350px) {
+    @media (max-width: 1500px) {
       display: block;
+      transition: 3s ease-in-out;
+    }
+  }
+  .Bar {
+    color: $color-gold;
+  }
+  .app__navbar-smallscreen_overlay {
+    display: none;
+    @media (max-width: 1400px) {
+      display: block;
+      position: absolute;
+      animation: animationname 0.6s ease-in 0s 1 normal none;
+      right: 0%;
+      transition: 0.5s ease-in-out;
+      width: 100%;
+      padding: 3rem;
+      text-align: center;
+      background-color: $color-black;
+      .app__navbar-smallscreen_links {
+        list-style-type: none;
+        font-family: $font-alt;
+        li {
+          margin-top: 2rem;
+          color: $color-gold;
+          a {
+            color: $color-gold;
+            &:hover {
+              color: $color-white;
+            }
+          }
+        }
+      }
+    }
+    @keyframes animationname {
+      0% {
+        opacity: 0;
+        transform: translateY(-250px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   }
 }
