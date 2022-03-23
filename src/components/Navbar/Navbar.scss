@@ -1,6 +1,7 @@
 @import "../../variables";
 .app__navbar {
   width: 100%;
+  max-width: 100%;
   display: flex;
   cursor: pointer;
   justify-content: space-between;
@@ -8,7 +9,7 @@
   color: $color-white;
   background: $color-black;
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   .app__navbar_logo {
     background-color: $color-black;
     img {
@@ -22,8 +23,12 @@
     align-items: center;
     gap: 3rem;
     justify-content: space-evenly;
+    @media (max-width: 1350px) {
+      display: none;
+    }
     li {
       color: $color-white;
+      margin-right: 2rem;
       a:hover {
         color: $color-grey;
         transition: ease-in-out;
@@ -35,12 +40,23 @@
     align-items: center;
     justify-content: space-evenly;
     margin-right: 3rem;
+    @media (max-width: 1350px) {
+      display: none;
+    }
     span {
       margin: 0 1rem;
     }
     p:hover {
       border-bottom: 2px solid $color-gold;
       transition: ease-in-out;
+    }
+  }
+  .Bars {
+    display: none;
+    color: white;
+    font-size: 2.5rem;
+    @media (max-width: 1350px) {
+      display: block;
     }
   }
 }

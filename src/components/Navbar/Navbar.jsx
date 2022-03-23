@@ -1,7 +1,6 @@
 import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
-
 import Logo from "../../assets/gericht.png";
 
 function Navbar() {
@@ -32,6 +31,7 @@ function Navbar() {
         <span>|</span>
         <p> Book Table</p>
       </div>
+      <GiHamburgerMenu className="Bars" />
     </nav>
   );
 }
