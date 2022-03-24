@@ -1,0 +1,81 @@
+.app__About-Container {
+  background: url("../../assets/bg.png") no-repeat center center/cover;
+  padding: 1rem;
+  .Containerimg {
+    background: url("../../assets/G.png") no-repeat center center;
+    padding: 3rem;
+  }
+  .Container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
+    .app__Aboutus_content {
+      .app__About-h1 {
+        font-size: 4.5rem;
+        color: $color-gold;
+        font-family: $font-base;
+        @media (max-width: 1250px) {
+          font-size: 3.5rem;
+        }
+        @media (max-width: 450px) {
+          font-size: 2.5rem;
+        }
+        @media (max-width: 280px) {
+          font-size: 1.7rem;
+          line-height: 1.4;
+        }
+      }
+
+      .History {
+        margin-left: 0%;
+      }
+      .app__About-p {
+        padding-top: 2rem;
+        font-size: 1.4rem;
+        color: $color-grey;
+        font-family: $font-alt;
+        line-height: 1.4;
+        @media (max-width: 1250px) {
+          font-size: 1.2rem;
+        }
+        @media (max-width: 280px) {
+          font-size: 0.8rem;
+        }
+      }
+      .app_About-btn {
+        padding: 1rem 3rem;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        margin-top: 2rem;
+        background-color: $color-crimson;
+        transition: ease-in;
+        cursor: pointer;
+        &:hover {
+          background-color: $color-gold;
+        }
+        @media (max-width: 450px) {
+          padding: 0.7rem 1rem;
+        }
+      }
+    }
+    .app__Aboutus-img {
+      width: max-content;
+      img {
+        @media (max-width: 1250px) {
+          width: 100%;
+        }
+        @media (max-width: 900px) {
+          display: none;
+        }
+      }
+    }
+  }
+}
