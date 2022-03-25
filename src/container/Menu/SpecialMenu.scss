@@ -1,0 +1,71 @@
+.app__Specialmenu-Container {
+  background: $color-black;
+  padding: 2rem;
+  .app__Specialmenu-Content {
+    text-align: center;
+    padding: 2rem;
+    h1 {
+      font-family: $font-base;
+      color: $color-gold;
+      font-size: 3rem;
+      padding: 2rem;
+    }
+  }
+  .app__Specialmenu-subContent {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    @media (max-width: 800px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .WineBeer {
+      .app__WineBeer-p {
+        color: $color-white;
+        font-size: 3.5rem;
+        font-family: $font-base;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        @media (max-width: 1000px) {
+          font-size: 2rem;
+        }
+      }
+    }
+    .Cocktails {
+      .app__WineBeer-p {
+        color: $color-white;
+        font-size: 3.5rem;
+        font-family: $font-base;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        @media (max-width: 1000px) {
+          font-size: 2rem;
+        }
+      }
+    }
+    .app__special-img {
+      img {
+        width: 100%;
+        @media (max-width: 800px) {
+          display: none;
+        }
+      }
+    }
+  }
+  .app__special-btn {
+    text-align: center;
+    margin-top: 2.5rem;
+    button {
+      border: none;
+      font-size: 1.2rem;
+      outline: none;
+      background: $color-gold;
+      padding: 0.7rem 1.4rem;
+      border-radius: 5px;
+      cursor: pointer;
+      &:hover {
+        background: $color-white;
+      }
+    }
+  }
+}
