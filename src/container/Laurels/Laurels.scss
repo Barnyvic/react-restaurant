@@ -1,0 +1,70 @@
+.app__Laurels-Container {
+  background: url("../../assets/bg.png") no-repeat center center/cover;
+  padding: 2rem;
+  .app__Laurels-Container-Content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    gap: 3rem;
+    @media (max-width: 900px) {
+      flex-direction: column-reverse;
+    }
+
+    .app__Laurels-img {
+      img {
+        width: 100%;
+      }
+    }
+    .app__Laurels-content {
+      padding: 3rem;
+      h1 {
+        font-size: 4.5rem;
+        color: $color-gold;
+        font-family: $font-base;
+        padding: 1rem 0;
+        @media (max-width: 1000px) {
+          font-size: 3.5rem;
+        }
+        @media (max-width: 900px) {
+          font-size: 2.5rem;
+        }
+      }
+      .gridContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        .awardsCard {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          justify-content: space-between;
+          img {
+            width: 20%;
+          }
+          .awardContent {
+            h5 {
+              color: $color-gold;
+              font-family: $font-base;
+              font-size: 1.7rem;
+              @media (max-width: 1000px) {
+                font-size: 1.4rem;
+              }
+            }
+            p {
+              color: $color-white;
+              font-size: 1.4rem;
+              font-family: $font-alt;
+              @media (max-width: 1500px) {
+                font-size: 1.2rem;
+              }
+              @media (max-width: 1000px) {
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
