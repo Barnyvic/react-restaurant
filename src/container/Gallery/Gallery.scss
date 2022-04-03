@@ -2,14 +2,13 @@
   background: $color-black;
   display: flex;
   flex-direction: row;
-  padding: 4rem 0 4rem 3rem;
+  padding: 4rem 0 4rem 6rem;
   @media (max-width: 1400px) {
     flex-direction: column-reverse;
   }
-  @media (max-width: 550px) {
-    overflow: hidden;
+  @media (max-width: 540px) {
+    overflow:hidden;
   }
-
   .app__gallery-Content {
     flex: 1;
     display: flex;

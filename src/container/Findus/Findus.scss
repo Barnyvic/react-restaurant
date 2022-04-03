@@ -1,0 +1,52 @@
+.app__Findus-MainContainer {
+  background: url("../../assets/bg.png") no-repeat center center/cover;
+  padding: 2rem;
+  .app__Findus-Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 1.5rem;
+    padding: 2rem;
+    @media (max-width: 850px) {
+      flex-direction: column-reverse;
+    }
+    .app__findus-Content {
+      flex: 1;
+      h1 {
+        font-size: 4.5rem;
+        color: $color-gold;
+        font-family: $font-base;
+        padding: 1rem 0;
+        @media (max-width: 1000px) {
+          font-size: 3rem;
+        }
+      }
+      p {
+        color: $color-white;
+        font-size: 1.4rem;
+        font-family: $font-alt;
+        line-height: 1.7;
+        @media (max-width: 1000px) {
+          font-size: 1rem;
+        }
+      }
+      button {
+        border: none;
+        outline: none;
+        margin-top: 1rem;
+        background: $color-gold;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        padding: 0.7rem 1.4rem;
+      }
+    }
+    .app__Findus-imgContainer {
+      flex: 1;
+      img {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}
