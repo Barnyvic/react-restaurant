@@ -51,19 +51,29 @@ function Navbar() {
           <div className="app__navbar-smallscreen_overlay ">
             <ul className="app__navbar-smallscreen_links">
               <li>
-                <a href="#home">Home</a>
+                <a href="#Home" onClick={handleToggle}>
+                  Home
+                </a>
               </li>
               <li>
-                <a href="#about">About</a>
+                <a href="#About" onClick={handleToggle}>
+                  About
+                </a>
               </li>
               <li>
-                <a href="#menu">Menu</a>
+                <a href="#Menu" onClick={handleToggle}>
+                  Menu
+                </a>
               </li>
               <li>
-                <a href="#awards">Awards</a>
+                <a href="#Awards" onClick={handleToggle}>
+                  Awards
+                </a>
               </li>
               <li>
-                <a href="#contact">Contact</a>
+                <a href="#Contact" onClick={handleToggle}>
+                  Contact
+                </a>
               </li>
             </ul>
           </div>

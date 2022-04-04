@@ -4,7 +4,7 @@ import SubHeading from "../../components/SubHeading/SubHeading";
 
 const Newsletter = () => {
   return (
-    <div className="app__Newsletter-MainContainer">
+    <div id="Contact" className="app__Newsletter-MainContainer">
       <div className="app__Newsletter-COntainer">
         <div className="app__NewsletterBorder">
           <SubHeading title="Newsletter" />

@@ -3,7 +3,7 @@ import SubHeading from "../../components/SubHeading/SubHeading";
 import { images, data } from "../../constants";
 
 const Laurels = () => (
-  <div className="app__Laurels-Container">
+  <div id="Awards" className="app__Laurels-Container">
     <div className="app__Laurels-Container-Content">
       <div className="app__Laurels-content">
         <SubHeading title="Awards & Recognition" />

@@ -3,7 +3,7 @@ import SubHeading from "../SubHeading/SubHeading";
 
 const Header = () => {
   return (
-    <div id="home" className="app_header_wrapper app_wrapper">
+    <div id="Home" className="app_header_wrapper app_wrapper">
       <div className="app_header_wrapper_content">
         <SubHeading title="Chase The New Flavour" />
         <h1 className="app_header-h1">The Key To Fine Dining</h1>
