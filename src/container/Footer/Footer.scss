@@ -1,6 +1,6 @@
 .app__Footer-MainContainer {
   background: url("../../assets/bg.png") no-repeat center center/cover;
-  padding: 3rem;
+  padding: 2rem;
   .date {
     text-align: center;
     font-family: $font-alt;
@@ -8,7 +8,7 @@
     color: white;
   }
   .footerGridContainer {
-    padding: 2.5rem;
+    padding: 2rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
