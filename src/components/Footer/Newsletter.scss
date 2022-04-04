@@ -36,6 +36,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-direction: row;
+        @media (max-width: 550px) {
+          flex-direction: column;
+        }
         input {
           border: 1px solid $color-gold;
           outline: $color-gold;
@@ -52,7 +56,7 @@
           }
           @media (max-width: 550px) {
             padding: 0.7rem;
-            max-width: 50%;
+            max-width: 100%;
           }
         }
         button {
@@ -62,8 +66,8 @@
           font-size: 1.2rem;
           padding: 1.4rem 1.4rem;
           @media (max-width: 550px) {
-            padding: 0.7rem 0.7rem;
-            margin-left: 0.6rem;
+            padding: 0.3rem 0.3rem;
+            margin-top: 0.6rem;
           }
         }
       }
