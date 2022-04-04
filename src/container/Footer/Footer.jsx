@@ -32,6 +32,9 @@ const Footer = () => {
           <p>Saturday-Sunday: 07:00 Am - 11:00 Pm</p>
         </div>
       </div>
+      <div className="date">
+        <p>Copywrite @{new Date().getFullYear()} Gericht-Resturant</p>
+      </div>
     </div>
   );
 };
