@@ -13,16 +13,6 @@
     justify-content: space-between;
     max-width: 1400px;
     margin: 0 auto;
-    animation: About 5s ease-in 0s 1 normal forwards;
-    @keyframes About {
-      0% {
-        transform: translateX(0);
-      }
-
-      100% {
-        transform: translateX(100px);
-      }
-    }
     @media (max-width: 900px) {
       flex-direction: column;
     }
