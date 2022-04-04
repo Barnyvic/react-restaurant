@@ -7,7 +7,7 @@
     flex-direction: column-reverse;
   }
   @media (max-width: 540px) {
-    overflow:hidden;
+    overflow: hidden;
   }
   .app__gallery-Content {
     flex: 1;
@@ -111,17 +111,6 @@
           transition: 0.5s ease;
           &:hover {
             opacity: 0.35;
-          }
-        }
-        .gallery-image-icon {
-          position: absolute;
-          color: #000;
-          font-size: 2rem;
-          opacity: 1;
-          transition: 0.5s ease;
-          cursor: pointer;
-          &:hover {
-            opacity: 1;
           }
         }
       }

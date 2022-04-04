@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  BsArrowLeftShort,
-  BsArrowRightShort,
-  BsInstagram,
-} from "react-icons/bs";
+import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
 import { useRef } from "react";
 import { images } from "../../constants";
 import SubHeading from "../../components/SubHeading/SubHeading";
@@ -47,7 +43,6 @@ export const Gallery = () => {
                 key={`gallery_img-${index + 1}`}
               >
                 <img src={GalleryImg} alt="gallery-images" />
-                <BsInstagram className="gallery-image-icon " />
               </div>
             );
           })}
